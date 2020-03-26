@@ -6,26 +6,26 @@ e per i multipli di 5 stampi “Buzz”.
 Per i numeri che sono sia multipli di 3 che di 5 stampi” FizzBuzz”. */
 
 
-/*creo un ciclo che stampi numeri da 1 a 100 */
 
+/* creo variabile che assumerà ad ogni ciclo il valore risultante */
 var selector;
+
+/*creo un ciclo che stampi numeri da 1 a 100 */
 for (i = 1; i <= 100; i++) {
-  /*se l'attuale iterazione fornisce 0 come resto sia della divisione per 3 e 5 stampo fizzbuzz*/
+  /*se l'attuale iterazione fornisce 0 come resto della divisione per 3 e per 5, assegno "Fizzbuzz" alla var selector*/
   if (i % 3 == 0 && i % 5 == 0) {
     selector = 'Fizzbuzz';
-    /*se  l'attuale iterazione fornisce 0 come resto della divisione per 3 assegno fizz alla var selector*/
+    /*se  l'attuale iterazione fornisce 0 come resto della divisione per 3, assegno "Fizz" alla var selector*/
   } else if (i % 3 == 0) {
     selector = 'Fizz';
-    /*se  l'attuale iterazione fornisce 0 come resto della divisione per 5 assegno fizz alla var selector*/
+    /*se  l'attuale iterazione fornisce 0 come resto della divisione per 5, assegno "Buzz"" alla var selector*/
   } else if (i % 5 == 0) {
     selector = 'Buzz';
-    /* in tutti gli altri caso assegno alla variabile l'index corrente */
+    /* in tutti gli altri casi assegno alla variabile l'index corrente */
   } else {
     selector = i;
-
-
-    /* stampo su pagina la variabile aggiunngendone ogni volta una copia con l'iterazione aggiornata */
   };
+  /* stampo su pagina la variabile determinata dal ciclo aggiunngendone ogni volta una copia con l'iterazione aggiornata */
   document.getElementById('fizzbuzz').innerHTML += selector + '<br>';
 }
 
