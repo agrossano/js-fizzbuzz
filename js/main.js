@@ -7,7 +7,7 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi” FizzBuzz”. */
 
 
 /* dichiaro variabili */
-var multiple3, multiple5, output;
+var multiple3, multiple5;
 
 
 /*creo un ciclo che stampi numeri da 1 a 100 */
