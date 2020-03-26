@@ -6,20 +6,16 @@ e per i multipli di 5 stampi “Buzz”.
 Per i numeri che sono sia multipli di 3 che di 5 stampi” FizzBuzz”. */
 
 
-/* dichiaro variabili */
-var multiple3, multiple5;
-
-
 /*creo un ciclo che stampi numeri da 1 a 100 */
 
 for (i = 1; i <= 100; i++) {
-  /*se l'attuale iterazione fornisce 0 come risultato sia della divisione per 3 e 5 stampo fizzbuzz*/
+  /*se l'attuale iterazione fornisce 0 come resto sia della divisione per 3 e 5 stampo fizzbuzz*/
   if (i % 3 == 0 && i % 5 == 0) {
     console.log('FizzBuzz');
-    /*se  l'attuale iterazione fornisce 0 come risultato della divisione per 3 stampo fizz*/
+    /*se  l'attuale iterazione fornisce 0 come resto della divisione per 3 stampo fizz*/
   } else if (i % 3 == 0) {
     console.log('Fizz');
-    /*se l'attuale iterazione fornisce 0 come risultato della divisione per 3 stampo buzz*/
+    /*se l'attuale iterazione fornisce 0 come resto della divisione per 3 stampo buzz*/
   } else if (i % 5 == 0) {
     console.log('Buzz')
     /* in tutti gli altri caso stampo la cifra dell'attuale iterazione */
